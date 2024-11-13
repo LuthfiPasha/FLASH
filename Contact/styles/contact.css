@@ -1,0 +1,357 @@
+/* Luthfi */
+
+/*poppins - google font link  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+/* '*' is used to apply styles for all elements */
+*{ 
+    padding: 0;
+    margin: 0;
+    font-family: Poppins Medium;
+    overflow-x: hidden;
+}
+body{
+    background-color: #ffffff;
+    
+}
+/*Navigation start*/
+.top{
+    background-color:#03071d;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 13px;
+    overflow: hidden;
+
+}
+
+.nav{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav ul li a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+
+    height: 10%;
+    width: 10%;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+
+.nav ul {
+    position: relative;
+    right: 10px;
+}
+.nav ul li {
+
+    display:inline-block;
+    list-style: none;
+    padding: 10px;
+
+}
+/*Navigation  end*/
+
+
+/*Header image */
+.contact-bg{
+    height: 100vh;   /*viewport height*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../images/contact-bg.jpg); 
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-bg h3{
+    font-size: 1.3rem;  /* rem -root em (a measurement CSS unit similar to pixels(16px) )*/
+    font-weight: 400;
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+
+/* Horizontal line styling */
+.line div{
+    margin: 0 0.2rem;
+}
+
+/* First and third divs in the line */
+.line div:nth-child(1), .line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: #997782;
+    border-radius: 5px;
+}
+
+/*Aligns the line horizontally*/
+.line{
+    display: flex;
+    align-items: center;
+}
+
+/* Center dot styling */
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: #666364;
+    border-radius: 50%;
+}
+.text{
+    font-weight: 300;
+    opacity: 0.9;
+}
+.contact-bg .text{
+    margin: 1.6rem 0;
+}
+.contact-body{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Contact information section */
+.contact-info{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #0047AB;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+
+/*FAQ LINK*/
+.faq-link{
+    display: flex;             
+    justify-content: center;   
+    align-items: center;      
+    margin: 20px 0; 
+}
+
+
+.contact-form{
+    display: flex;             
+    flex-direction: column;   
+    align-items: center;       
+    padding: 2rem 0;
+    border-top: 1px solid #c7c7c7;
+}
+
+.contact-form form{
+    padding: 30px 40px ;
+    background: transparent;
+    border: 2px solid rgba(148, 92, 92, 0.2);
+    border-radius: 10px;
+
+}
+
+/* Form input field styling */
+.form-control{
+    width: 95%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 8px;
+    padding: 12px 8px;
+    margin: 8px 12px;
+    font-size: 16px;
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    padding: 20px;
+}
+.send-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: #0047AB;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.reset-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background:#ff0000;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.send-btn:hover{
+    opacity: 0.8;
+}
+/* Image styling inside the form */
+.contact-form > div img{ /* '>' - child combinator (used to children of specified element not nested ones) */
+    width: 85%;
+}
+
+.contact-form > div{
+    margin: 0 20px;
+    text-align: center;
+}
+/*foooter start */
+.imgs {
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+    animation-delay: 2s;
+    
+    
+}
+
+.imgs img {
+    width: 100%;
+    height: 100%;
+
+}
+.b1 {
+    margin: 30px 0 0 30px;
+    display: flex;
+}
+
+.b1 iframe {
+    height: 150px;
+    width: 400px;
+}
+
+.b1 ul {
+    line-height: 30px;
+    min-width: max-content;
+    list-style: none;
+    margin: 0 330px 0 0;
+    
+}
+
+.b1 ul :last-child {
+    min-width: none;
+    margin:0;
+}
+
+.b1 ul li img {
+    width:8%;
+    height:8%;
+    cursor: pointer;
+}
+
+.b1 ul li a{
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.b2 img { 
+
+    width: 10%; 
+    height: 10%; 
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+    padding: 0 0 0 10px;
+}
+
+
+.b2 {
+    display: flex;
+    background-color: #03071d;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+
+.b2 ul {
+    line-height: 30px;
+    min-width: max-content;
+    list-style: none;
+    margin: 0 0 0 30px;
+    padding: 0 0 0 510px;
+    
+}
+
+.b1 ul :last-child {
+    min-width: none;
+    margin:0;
+}
+
+.b2 ul li a{
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*foooter end */
+
+/* For screens 768px and wider */
+@media screen and (min-width: 768px){
+    .contact-bg .text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* For screens 992px and wider */
+@media screen and (min-width: 992px){
+    .contact-bg .text{
+        width: 50%;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+/* For screens 1200px and wider */
+@media screen and (min-width: 1200px){
+    .contact-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
