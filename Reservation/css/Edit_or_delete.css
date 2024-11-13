@@ -1,0 +1,47 @@
+body{
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.table-section{
+    height: 650px;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    -webkit-text-fill-color: white;
+    font-size: 18px;
+}
+
+th,td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+.editndelete{
+    text-decoration: none;
+    background-color: black;
+    -webkit-text-fill-color: #dddddd;
+    border-radius: 6px;
+    padding: 7px;
+}

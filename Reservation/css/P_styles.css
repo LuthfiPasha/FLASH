@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins Medium;
+    font-size: 18px;
+}
+
+.pageName{
+    color:#ffffff;
+    background-color: rgb(0, 0, 0);
+    text-align:center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 9px;
+    font-size: 20px;
+}
+
+.container , .container2 , .container3{
+    max-width: 700px;
+    width: 100%;
+    padding-left: 20px;
+}
+.container2, .container3{
+    padding-top: 20px;
+}
+
+.description{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.container form .reservation-details , .container2 form .invoice-details , .container3 form .payment-details{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+}
+
+form .reservation-details .input-box, form .invoice-details .input-box1 , form .payment-details .input-box2{
+    margin: 20px 0 12px 0;
+    width: calc(50% - 20px);
+}
+
+form .reservation-details .map{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 250px;
+    margin: 20px 0 0 900px;
+    
+}
+
+.reservation-details .input-box .details , .invoice-details .input-box1 .price-details , .payment-details .input-box2 .pay-method{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.reservation-details .input-box input , .invoice-details .input-box1 input,select , .payment-details .input-box2 input{
+    height: 35px;
+    width: 90%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #6a6a6a;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.payable , .submit-box{
+    margin: 20px 0 12px 0;
+    width: calc(50% - 20px);
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.payable input{
+    height: 35px;
+    width: 90%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #6a6a6a;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.submit-box input{
+    height: 35px;
+    width: 30%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #6a6a6a;
+    padding-left: 3px;
+    font-size: 16px;
+    background-color: black;
+    -webkit-text-fill-color: #ffffff;
+}
+
+
+
