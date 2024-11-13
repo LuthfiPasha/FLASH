@@ -1,0 +1,87 @@
+body {
+    font-family: Verdana;
+    background-image: url("bg.png");
+    font-size: 14px;
+}
+
+.c1 {
+    color: #000000;
+    background-color: #ffffff;
+    width:70%;
+    border-radius: 30px;
+    padding: 0 0 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+.form {
+    padding: 30px 0 0 30px;
+    display:flex;
+}
+
+.f1 {
+    width: 50%;
+    padding: 0 0 0 40px;
+}
+
+.f2 {
+    width: 50%;
+    padding: 0 0 0 30px;
+}
+.txt {
+
+    width: 85%;
+    height: 35px;
+    border: 2px #000000 solid;
+    background:transparent;
+    border-radius: 3px;
+    margin: 5px 0 0 0;
+
+}
+
+.btn{
+
+    margin: 10px 0 0 60px;
+}
+
+.sb {
+    font-family: Verdana;
+    background:#03071d;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width:120px;
+    height: 35px;
+    border-radius: 20px;
+    border: 3px solid #fc0000;
+    cursor: pointer;
+    margin: 0 20px 0 0; 
+    position: relative;
+}
+
+
+.sb:hover {
+
+    border: none;
+}
+
+
+
+.db {
+    font-family: Verdana;
+    background:#fc0000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width:120px;
+    height: 35px;
+    border-radius: 20px;
+    border: 3px solid #03071d;
+    cursor: pointer;
+    margin: 0 20px 0 0; 
+    position: relative;
+}
+
+.db:hover {
+
+    border: none;
+}
